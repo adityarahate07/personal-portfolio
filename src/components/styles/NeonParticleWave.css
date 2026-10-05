@@ -1,0 +1,13 @@
+.neon-particle-wave-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.95;
+  filter: drop-shadow(0 0 16px rgba(56, 189, 248, 0.45));
+  will-change: transform;
+  transform: translateZ(0);
+}
