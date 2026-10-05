@@ -24,13 +24,11 @@ const Navbar = () => {
     links.forEach((elem) => {
       const element = elem as HTMLAnchorElement;
       element.addEventListener("click", (e) => {
-        if (window.innerWidth > 1024) {
-          const href = element.getAttribute("data-href");
-          if (href && href.startsWith("#")) {
-            e.preventDefault();
-            const target = document.querySelector(href);
-            target?.scrollIntoView({ behavior: "smooth", block: "start" });
-          }
+        const href = element.getAttribute("data-href");
+        if (href && href.startsWith("#")) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          target?.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       });
     });
